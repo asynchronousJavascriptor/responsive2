@@ -1,0 +1,198 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Gilroy-Medium_0.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("./fonts/Gilroy-Regular_0.ttf");
+    font-weight: 400;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(#dbdfdd 2%, #86B2A3, #86B2A3);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    position: relative;
+    width: 100%;
+    height: 14vh;
+}
+
+#main #nav #center {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+#nav #center h3 {
+    font-family: "Delirium NCV";
+    font-size: 2.2vw;
+    font-weight: 100;
+}
+
+#center .line {
+    width: 7vw;
+    height: 2px;
+    background-color: #799c90;
+}
+
+#nav i {
+    color: #fff;
+}
+
+#maintext {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#maintext .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#maintext .row h4 {
+    font-family: "Delirium NCV";
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: 100;
+}
+
+#maintext .row h4:nth-child(2) {
+    color: #425951;
+}
+
+#maintext>h1 {
+    font-family: Delirium NCV;
+    color: #fff;
+    line-height: 10vw;
+    font-weight: 100;
+    font-size: 12vw;
+}
+
+#main #one {
+    width: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main #two {
+    width: 18vw;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(0%, -50%);
+}
+
+#main #three {
+    width: 12vw;
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(0%, -50%);
+}
+
+#main #bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+    height: 200px;
+}
+
+#bottom img {
+    width: 60%;
+}
+
+#bottom p {
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#bottom button {
+    padding: .8vw 2.8vw;
+    background-color: #c3e1d8;
+    color: #425951;
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: .2vw;
+    border-radius: 100px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+@media(max-width: 500px) {
+    #nav {
+        height: 10vh;
+    }
+
+    #nav #center h3 {
+        font-size: 7vw;
+        font-weight: 100;
+    }
+
+    #maintext .row h4 {
+        font-size: 7vw;
+    }
+
+    #maintext>h1 {
+        white-space: nowrap;
+        font-size: 30vw;
+        line-height: 28vw;
+    }
+
+    #main #one {
+        width: 85vw;
+    }
+
+    #main #bottom {
+        width: 80%;
+    }
+
+    #main button {
+        padding: 2.8vw 4.8vw;
+    }
+}

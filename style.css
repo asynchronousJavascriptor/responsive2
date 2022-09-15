@@ -10,6 +10,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: Delirium;
+    src: url("./fonts/DeliriumNcv-Vm5e.ttf");
+    font-weight: 400;
+}
+
 
 
 * {
